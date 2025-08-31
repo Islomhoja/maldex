@@ -28,7 +28,7 @@ input,button{transition:all .4s ease;border:0;outline:none;box-shadow:unset;}
 button:hover{background: #e2192d;}
 button:focus{border: 2px solid #45fc62;background: #c71426;}
 button:active{background: #bb1626;}
-body{display: flex;flex-direction: column;background: #fcfaf6;min-height: 100vh;}
+body{display: flex;flex-direction: column;background: #fcfaf6;min-height: 100vh;min-width: 1400px;}
 body::-webkit-scrollbar-track,::-webkit-scrollbar-track{background-color:transparent;border-radius:50px;}
 body::-webkit-scrollbar,::-webkit-scrollbar{width:3px;border-radius:6px;height: 3px;}
 body::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb{background-color:#fcfaf6;border-radius:50px;}
