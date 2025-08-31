@@ -1,23 +1,122 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // var swiper = new Swiper(".mySwiper", {
-    //     spaceBetween: 10,
-    //     slidesPerView: 9,
-    //     freeMode: true,
-    //     watchSlidesProgress: true,
-    //     loop: true,
-    //     breakpoints: {
-    //         1: {
-    //           slidesPerView: 5,
-    //         },
-    //         768: {
-    //           slidesPerView: 8,
-    //         },
-    //         992: {
-    //             slidesPerView: 10,
-    //         },
-    //     },
-    // });
+    var swiper = new Swiper(".swiper-banner", {
+        spaceBetween: 12,
+        slidesPerView: 11,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        breakpoints: {
+            1: {
+              slidesPerView: 5,
+            },
+            768: {
+              slidesPerView: 8,
+            },
+            1400: {
+                slidesPerView: 11,
+            },
+        },
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    });
+
+    
+    var swiper = new Swiper(".swiper-banner-right-top", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
+    var swiper = new Swiper(".swiper-banner-bottom", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 2200,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
+
+
+    var swiper = new Swiper(".swiper-banner-ad", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    });
+
+    
+    var swiper = new Swiper(".swip-product-main", {
+        slidesPerView: 5,
+        spaceBetween: 25,
+    });
+
+    var swiper = new Swiper('.swiper-tab-prod', {
+        slidesPerView: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+      
+    function initSwiperBulletsHover() {
+        const bullets = document.querySelectorAll('.swiper-tab-prod .swiper-pagination .swiper-pagination-bullet');
+        
+        bullets.forEach(bullet => {
+          bullet.removeEventListener('mouseenter', bullet._hoverHandler);
+          bullet._hoverHandler = () => bullet.click();
+          bullet.addEventListener('mouseenter', bullet._hoverHandler);
+        });
+    }
+    var navLink = document.querySelectorAll('.nav-item');
+    navLink.forEach(navLink => {
+        document.addEventListener('click', () => {
+            initSwiperBulletsHover();
+        });
+    })
+
+    document.addEventListener('click', () => {
+        initSwiperBulletsHover();
+    });
+      
+
+
 
     let catalogList = document.querySelector('.catalog-dropdown .catalog-list');
 
