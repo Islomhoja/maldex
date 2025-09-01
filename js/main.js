@@ -10,12 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         breakpoints: {
             1: {
-              slidesPerView: 5,
+                slidesPerView: 3,
+            },
+            575: {
+                slidesPerView: 4,
             },
             768: {
-              slidesPerView: 8,
+              slidesPerView: 6,
             },
-            1400: {
+            1210: {
                 slidesPerView: 11,
             },
         },
@@ -85,6 +88,27 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swip-product-main", {
         slidesPerView: 5,
         spaceBetween: 25,
+        breakpoints: {
+            // when window width is >= 640px
+            64: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 3,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            // when window width is >= 1024px
+            1410: {
+              slidesPerView: 5,
+              spaceBetween: 30,
+            },
+        },
     });
 
     var swiper = new Swiper('.swiper-tab-prod', {
