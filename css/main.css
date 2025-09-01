@@ -139,7 +139,7 @@ path{transition:all .4s ease;}
 
 .cat-list-name{font-family: var(--font-family);font-weight: 700;font-size: 1.2em;line-height: 130%;color: var(--base-dark);display: block;margin-bottom: 16px;}
 .cat-list-name:hover{color: var(--icon-dark);}
-.cat-list-item{width: 180px;}
+.cat-list-item{width: 200px;}
 .cat-list-ul{display: flex;flex-direction: column;gap:8px}
 .cat-list-ul a{font-family: var(--font-family);font-weight: 500;font-size: 18px;line-height: 130%;color: var(--base-dark-grey);}
 .cat-list-ul a:hover{color: var(--base-dark);}
