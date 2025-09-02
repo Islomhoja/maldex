@@ -99,12 +99,12 @@ document.addEventListener("DOMContentLoaded", function () {
               slidesPerView: 3,
             },
             // when window width is >= 1024px
-            1024: {
+            991: {
               slidesPerView: 4,
               spaceBetween: 20,
             },
             // when window width is >= 1024px
-            1410: {
+            1210: {
               slidesPerView: 5,
               spaceBetween: 30,
             },
