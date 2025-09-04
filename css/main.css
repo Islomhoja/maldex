@@ -28,7 +28,7 @@ input,button{transition:all .4s ease;border:0;outline:none;box-shadow:unset;}
 button:hover{background: #e2192d;}
 button:focus{border: 2px solid #45fc62;background: #c71426;}
 button:active{background: #bb1626;}
-body{display: flex;flex-direction: column;background: #fcfaf6;min-height: 100vh;}
+body{display: flex;flex-direction: column;background: #fcfaf6;min-height: 100vh;content-visibility: auto;}
 body::-webkit-scrollbar-track,::-webkit-scrollbar-track{background-color:transparent;border-radius:50px;}
 body::-webkit-scrollbar,::-webkit-scrollbar{width:3px;border-radius:6px;height: 3px;}
 body::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb{background-color:#fcfaf6;border-radius:50px;}
@@ -131,11 +131,13 @@ path{transition:all .4s ease;}
 .swip-arrow-image.swiper-button-prev{transform: rotate(180deg);right: 46px;left: unset;}
 
 .bnr-top-item{background: var(--base-white);border-radius: 20px;height: 255px;width: 100%;display: flex;align-items: center;justify-content: center;padding: 20px;}
-.bnr-top-item img{transform: scale(.6);height: 155px;width: auto;}
+.bnr-top-item img{transform: scale(.6);height: 155px;width: auto;transition: all .4s;}
+.bnr-top-item:hover img{transform: scale(.7);}
 .swiper-bottom-content{display: flex;margin-top: 16px;gap:16px;}
 .swiper-banner-bottom{width: calc(25% - 4px);}
 .swiper-banner-bottom .bnr-top-item{height: 115px;}
 .swiper-banner-bottom .bnr-top-item img{height: auto;min-width: 80px;transform: scale(.7);}
+.swiper-banner-bottom .bnr-top-item:hover img{transform: scale(.8);}
 
 .cat-list-name{font-family: var(--font-family);font-weight: 700;font-size: 1.02em;line-height: 130%;color: var(--base-dark);display: block;margin-bottom:8px;}
 .cat-list-name:hover{color: var(--icon-dark);}
