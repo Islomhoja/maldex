@@ -238,7 +238,7 @@ path{transition:all .4s ease;}
     .swiper-item-block img{width: 30px;}
     .catalog-banner-slider{padding: 20px 22px 20px;height: 360px;}
     .swiper-banner-bottom .bnr-top-item{height: 88px;padding: 10px;}
-    .swiper-banner-bottom .bnr-top-item img{height: 100%;min-width: auto;transform: scale(.8);object-fit: contain;}
+    .swiper-banner-bottom .bnr-top-item img{height: 100%;min-width: auto;transform: scale(.56);object-fit: contain;}
     .cat-list-svg{width: 34px;height: 34px;margin-bottom: 10px;}
     .cat-list-name{font-size: 1em;margin-bottom: 2px;}
     .cat-list-ul a{font-size: 12px;}
@@ -270,12 +270,12 @@ path{transition:all .4s ease;}
 }
 @media (max-width:1200px) {
     .swiper-banner-bottom .bnr-top-item img{height: 100%;min-width: auto;transform: scale(.55);}
-    .swiper-banner-bottom .bnr-top-item{height: auto;aspect-ratio: 188/120;}
+    .swiper-banner-bottom .bnr-top-item{height: 110px;}
     .ttl-swip-banner{display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;}
     .cat-list-content{gap: 39px 45px;padding: 22px 32px;}
     .fav-lc-basket-flex{gap: 20px;}
     .swiper-item-block img{width: 35px;}
-    .bnr-top-item{height: 328px;}
+    .bnr-top-item{height: 233px;}
     .status-prod-swip{font-size: 9px;gap:5px;}
     .new-status-prod{padding: 2px 4px 1px;}
     .hit-status-prod{padding: 2px 5px 2px;}
